@@ -1,9 +1,11 @@
 require 'sinatra'
 
-get '/' do
-  'Welcome to the spell database'
-end
+class MyApp < Sinatra::Base
+  get '/' do
+    'Welcome to the spell database'
+  end
 
-get '/status' do
-  'Alive'
+  get '/status' do
+    'Alive'
+  end
 end
